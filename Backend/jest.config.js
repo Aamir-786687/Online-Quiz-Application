@@ -1,0 +1,13 @@
+export default {
+  testEnvironment: 'node',
+  setupFilesAfterEnv: ['<rootDir>/tests/setup.js'],
+  testMatch: ['**/tests/**/*.test.js'],
+  collectCoverageFrom: [
+    'routes/**/*.js',
+    'model/**/*.js',
+    'middleware/**/*.js',
+    '!**/node_modules/**'
+  ],
+  coverageDirectory: 'coverage',
+  coverageReporters: ['text', 'lcov', 'html']
+};
